@@ -1,0 +1,76 @@
+/* src/styles/global.css */
+
+@font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-BOLD.OTF') format('opentype');
+   font-weight: bold;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-BOLDCOND.OTF') format('opentype');
+   font-weight: bold;
+   font-style: normal;
+   font-stretch: condensed;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-BOLDCONDIT.OTF') format('opentype');
+   font-weight: bold;
+   font-style: italic;
+   font-stretch: condensed;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-BOLDIT.OTF') format('opentype');
+   font-weight: bold;
+   font-style: italic;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-COND.OTF') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: condensed;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-CONDIT.OTF') format('opentype');
+   font-weight: normal;
+   font-style: italic;
+   font-stretch: condensed;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MyriadPro-Light.otf') format('opentype');
+   font-weight: 300;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-SEMIBOLD.OTF') format('opentype');
+   font-weight: 600;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'MyriadPro';
+   src: url('./assets/fonts/MYRIADPRO-SEMIBOLDIT.OTF') format('opentype');
+   font-weight: 600;
+   font-style: italic;
+ }
+ 

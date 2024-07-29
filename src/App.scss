@@ -7,8 +7,11 @@
    -webkit-box-sizing: border-box;
 }
 
+@import 'Fonts';
+
 body{
    width: 100%;
+   font-family: 'MyriadPro', sans-serif !important;
 }
 
 #root{
