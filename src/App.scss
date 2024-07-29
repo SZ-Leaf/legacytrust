@@ -11,11 +11,37 @@ body{
    width: 100%;
 }
 
+#root{
+   overflow-x: hidden;
+}
+
 // Custom
+
+// Card
+
+.cardImgDiv{
+   height: 40%;
+   display: grid;
+   place-items: center;
+}
+
+.cardText{
+   font-size: 0.75rem;
+}
+
+// Home
+
+.sectionColor{
+   background-color: #e7e9ee;
+}
 
 .cstm-w-90{
    width: 90% !important;
    margin: auto;
+}
+
+.cstm-w-80{
+   width: 80%;
 }
 
 .cstm-bg-main{
@@ -47,29 +73,29 @@ body{
    border: #002768 !important;
 }
 
-.darkblue{
+.aboutUSRotate{
    
    color: #002768;
    // border-bottom: 1px solid #002768;
    transform: rotate(270deg);
    font-size: xx-large;
-   min-width: 150px;
+   // min-width: 150px;
+   // min-width: 25%;
 
    &:after{
       content: '';
       display: block;
       height: 0;
-      width: 200%;
-      left: -50%;
+      width: 170%;
+      left: -35%;
       top: 15px;
       position: relative;
-      border-bottom: 1px solid black;
+      border-bottom: 0.5px solid black;
    }
 }
 
-
 .title-fs{
-   font-size: 44px;
+   font-size: 4rem;
 }
 
 .break{
@@ -78,15 +104,14 @@ body{
 }
 
 .learnMorediv{
-   padding-top: 70px;
+   padding-top: 60px;
    padding-left: 115px;
 }
 
-
-#blueBtn{
-   padding: 15px 60px;
-   border-radius: 15px;
-   font-size: 20px;
+.blueBtn{
+   padding: 15px 60px !important;
+   border-radius: 15px !important;
+   font-size: 20px !important;
 }
 
 .cardImg{
@@ -99,7 +124,11 @@ body{
 }
 
 .mt-7rem{
-   margin-top: 9rem;
+   margin-top: 9rem !important;
+}
+
+.mt-6rem{
+   margin-top: 6rem !important;
 }
 
 .partnerDiv{
@@ -107,4 +136,94 @@ body{
    height: 150px;
    border-radius: 40%;
    background-color: gray;
+}
+
+.placeholder-grey::placeholder{
+   color: rgb(212, 212, 212);
+}
+
+
+// Services
+
+.bannerdiv{
+   background-image: url('src/assets/images/long-shot-happy-girl-holding-her-hat.jpg');
+
+   background-size: cover;
+   background-position: center;
+   height: 800px;
+   position: relative;
+}
+
+.bannerContent{
+   width: 25% !important;
+   position: absolute;
+   top: 47%;
+   left: 70%;
+   transform: translate(-50%, -50%);
+}
+
+.lineSpan{
+   padding-top: 50px;
+   display: block;
+   border-bottom: 1px solid black;
+}
+
+// about
+
+.aboutBubble{
+   width: 340px;
+   height: 340px;
+   border-radius: 42%;
+   display: grid;
+   place-items: center;
+   >p{
+      margin-bottom: 0;
+   }
+}
+
+.bubbleTitle{
+   font-size: 68px;
+}
+
+#bubble1{
+   background-color: #AECFFF;
+}
+#bubble2{
+   background-color: #77E2ED;
+}
+#bubble3{
+   background-color: #5E8BDB;
+}
+
+
+// responsive
+
+@media screen and (max-width: 1250px) {
+
+   // nav button
+   .navBtn.px-5{
+      padding-right: 2rem !important;
+      padding-left: 2rem !important;
+   }
+
+   //nav list
+   .navlist.gap-5{
+      gap: 2rem !important;
+   }
+
+   // Home
+
+   #requestAgentBtn{
+      padding: 15px 30px !important;
+   }
+
+   .aboutUSRotate{
+      font-size: x-large;
+   }
+
+   // newsletter
+   .submitBtn{
+      padding: 10px 0px !important;
+   }
+
 }

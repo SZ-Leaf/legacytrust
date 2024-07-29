@@ -5,20 +5,21 @@ import officeLady from '../assets/images/office lady.png'
 import { Button, Card, Container, Form } from "react-bootstrap";
 import newsImg1 from '../assets/images/newsimg1.jpg'
 import newsImg2 from '../assets/images/newsimg2.jpg'
+import Cards from "../components/Cards";
 
 const Home = () => {
 
 
 
    return(
-      <div className="w-100 p-0">
+      <div className="w-100 p-0 sectionColor mt-5">
 
-         <section className="d-flex align-items-center justify-content-between cstm-w-90 py-5 mt-5"> 
+         <section className="d-flex align-items-center justify-content-between cstm-w-90 py-5 mt-2"> 
 
             <div className="col-5 fw-bold">
-               <h1 className="title-fs fw-bolder">Lorem ipsum</h1>
+               <h1 className="title-fs fw-bold">Lorem ipsum</h1>
 
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+               <p className="mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                diam nonummy nibh euismod tincidunt ut laoreet dolore
                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
@@ -27,8 +28,8 @@ const Home = () => {
                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
                et iusto odio dignissim qui blandit praesent</p>
 
-               <div className="d-flex gap-5 align-items-center">
-                  <Button className="fw-bold bg-darkblue" id="blueBtn">Request Agent</Button>
+               <div className="d-flex mt-4 gap-5 align-items-center">
+                  <Button className="fw-bold bg-darkblue blueBtn" id="requestAgentBtn">Request Agent</Button>
                   <a href="" className="fw-medium text-decoration-none text-dark">Our Services →</a>
                </div>
 
@@ -42,21 +43,21 @@ const Home = () => {
 
          </section>
 
-         <section className="d-flex flex-wrap align-items-center justify-content-between cstm-w-90 mt-7rem vh-100 py-4">
+         <section className="d-flex flex-wrap align-items-center justify-content-between cstm-w-90 mt-7rem vh-100 py-5">
 
-            <div className="aboutUs-div1 d-flex flex-wrap align-items-center col-6">
+            <div className="aboutUs-div1 d-flex flex-wrap align-items-center col-6 pt-5">
 
-               <p className="text-uppercase darkblue">About Us</p>
+               <p className="text-uppercase aboutUSRotate">About Us</p>
 
-               <div className="w-75">
-                  <h2>Lorem ipsum<br></br>ijue ksjia</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+               <div className="" style={{width:'70%'}}>
+                  <h2 className="fs-1 fw-bold">Lorem ipsum<br></br>ijue ksjia</h2>
+                  <p className="pt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                   diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                   aliquam erat volutpat.</p>
                </div>
             
                <div className="learnMorediv">
-                  <Button className="fw-bold bg-darkblue" id="blueBtn">Learn More</Button>
+                  <Button className="fw-bold blueBtn bg-darkblue" id="">Learn More</Button>
                </div>
 
             </div>
@@ -72,77 +73,11 @@ const Home = () => {
          <section className="cstm-w-90 mt-7rem">
 
             <div className="mx-auto w-50 text-center">
-               <h2 className="text-uppercase fw-normal">Our Services</h2>
+               <h2 className="text-uppercase fs-1 fw-normal">Our Services</h2>
                <p className="fw-bold fs-1">We Protect your Legacy.</p>
             </div>
 
-            <div className="d-flex flex-wrap w-50 mx-auto justify-content-between gap-2 mt-5">
-               
-               <Card style={{ width: '49%' , borderRadius:'25px'}}
-                  className="border-0"
-               >
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                     <Card.Title>Final Expense</Card.Title>
-                     <Card.Text>
-                        Final Expense insurance will cover you for life.
-                        Prices are locked and will never
-                        increase nor will your policy end. These types
-                        of policies are designed to make
-                        sure all funeral and other end of life
-                        expenses are covered
-                     </Card.Text>
-                  </Card.Body>
-               </Card>
-
-               <Card style={{ width: '49%' , borderRadius:'25px'}}
-                  className="border-0"
-               >
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                     <Card.Title>Indexed Universal Life</Card.Title>
-                     <Card.Text>
-                        Final Expense insurance will cover you for life.
-                        Prices are locked and will never
-                        increase nor will your policy end. These types
-                        of policies are designed to make
-                        sure all funeral and other end of life
-                        expenses are covered
-                     </Card.Text>
-                  </Card.Body>
-               </Card>
-
-               <Card style={{ width: '49%' , borderRadius:'25px'}}
-                  className="border-0"
-               >
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                     <Card.Title>Mortage Protection</Card.Title>
-                     <Card.Text>
-                        Final Expense insurance will cover you for life.
-                        Prices are locked and will never increase nor will your policy end. These types of policies are designed to make sure all funeral and other end of life expenses are covered.
-                     </Card.Text>
-                  </Card.Body>
-               </Card>
-
-               <Card style={{ width: '49%' , borderRadius:'25px'}}
-                  className="border-0"
-               >
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                     <Card.Title>Fixed Index Annuities</Card.Title>
-                     <Card.Text>
-                        Final Expense insurance will cover you for life.
-                        Prices are locked and will never
-                        increase nor will your policy end. These types
-                        of policies are designed to make
-                        sure all funeral and other end of life
-                        expenses are covered
-                     </Card.Text>
-                  </Card.Body>
-               </Card>
-
-            </div>
+            <Cards />
 
          </section>
 
@@ -151,8 +86,8 @@ const Home = () => {
             <div className="d-flex">
 
                <div className="pt-5"  style={{ width:'40%' }}>
-                  <h1 className="fw-normal m-0">News</h1>
-                  <p className="fw-bold fs-2">Recent News & Press</p>
+                  <h1 className="fw-normal m-0" style={{fontSize:'3rem'}}>News</h1>
+                  <p className="fw-bold fs-1">Recent News & Press</p>
                </div>
 
                <div className="d-flex justify-content-between" style={{ width:'60%' }}>
@@ -187,7 +122,7 @@ const Home = () => {
 
          </section>
 
-         <section className="w-100 mt-7rem bg-white pt-5">
+         <section className="w-100 mt-5 bg-white pt-5">
 
             <div className="w-75 m-auto text-center">
 
@@ -213,31 +148,6 @@ const Home = () => {
 
          </section>
 
-         <section className="cstm-w-90 vh-100 mt-7rem">
-
-            <div className="d-flex">
-
-            <Container className="" style={{ width:'60%' }}>
-               <h1 className="text-uppercase">Contact Our Experts</h1>
-               <Form>
-                  <Form.Control type="text" placeholder="First Name" className="mb-3" /> {/* Input field for first name */}
-                  <Form.Control type="text" placeholder="Last Name" className="mb-3" /> {/* Input field for last name */}
-                  <Form.Control type="email" placeholder="Email" className="mb-3" /> {/* Input field for email */}
-                  <Form.Control type="text" placeholder="Phone Number" className="mb-3" /> {/* Input field for phone number */}
-                  <Form.Control type="text" placeholder="Occupation" className="mb-3" /> {/* Input field for occupation */}
-                  <Form.Control type="text" placeholder="State" className="mb-3" /> {/* Input field for state */}
-                  <Form.Control as="textarea" rows={3} placeholder="Message" className="mb-3" /> {/* Textarea for message */}
-                  <Button variant="" className="bg-darkblue" id="blueBtn" type="submit">
-                     Submit
-                  </Button>
-               </Form>
-            </Container>
-
-               <div className="" style={{ width:'40%' }}></div>
-
-            </div>
-
-         </section>
       </div>
    )
 }
