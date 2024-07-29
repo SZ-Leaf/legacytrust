@@ -1,11 +1,22 @@
 // src/pages/Services.jsx
-import React from 'react';
 import servicesBanner from "../assets/images/long-shot-happy-girl-holding-her-hat.jpg";
 import { Button, Container, Tab, Tabs } from 'react-bootstrap';
 import Cards from '../components/Cards';
 import Servicetabs from '../components/Servicetabs';
+import backgroundImage from '../assets/images/long-shot-happy-girl-holding-her-hat.jpg'
+import styled from "styled-components";
 
 const Services = () => {
+
+  const BannerDiv = styled.div`
+    background-image: url(${backgroundImage});
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;`;
+
   return(
     <div className="w-100 p-0 sectionColor mt-5">
 
@@ -14,7 +25,7 @@ const Services = () => {
         <p className='fs-5'>Learn more about the variety of financial solutions we provide to protect your family.</p>
       </div>
 
-      <div className='w-100 bannerdiv mt-5'>
+      <BannerDiv>
         <div className='bannerContent'>
 
           <h1 className='fw-bold' style={{color:'#002768'}}>Building a<br></br>Stronger<br></br>Tomorrow Starts<br></br>Today.</h1>
@@ -27,7 +38,7 @@ const Services = () => {
           <Button variant="" className='mt-3 text-white fw-bold bg-darkblue' id='blueBtn'>Learn More</Button>
 
         </div>
-      </div>
+      </BannerDiv>
 
       <section className='cstm-w-90 mt-7rem'>
         <Cards className='mt-4'></Cards>
