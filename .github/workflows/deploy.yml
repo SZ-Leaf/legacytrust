@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          local-dir: './dist'  # Adjust if your build output directory is different
+          local-dir: './dist/'  # Adjust if your build output directory is different
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
