@@ -6,6 +6,7 @@ import { Button, Card, Container, Form } from "react-bootstrap";
 import newsImg1 from '../assets/images/newsimg1.jpg'
 import newsImg2 from '../assets/images/newsimg2.jpg'
 import Cards from "../components/Cards";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -17,20 +18,13 @@ const Home = () => {
          <section className="d-flex align-items-center justify-content-between cstm-w-90 py-5 mt-2"> 
 
             <div className="col-5 fw-bold">
-               <h1 className="title-fs fw-bold">Lorem ipsum</h1>
+               <h1 className="title-fs fw-bold">At the heart of our mission is safeguarding families across the nation</h1>
 
-               <p className="mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-               diam nonummy nibh euismod tincidunt ut laoreet dolore
-               magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-               quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-               aliquip ex ea commodo consequat. Duis autem vel eum iriure
-               dolor in hendrerit in vulputate velit esse molestie consequat,
-               vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-               et iusto odio dignissim qui blandit praesent</p>
+               <p className="mt-4">Our experts will help you establish financial strength and stability. We will be your reliable partner in securing your financial well-being.</p>
 
                <div className="d-flex mt-4 gap-5 align-items-center">
                   <Button className="fw-bold bg-darkblue blueBtn" id="requestAgentBtn">Request Agent</Button>
-                  <a href="" className="fw-medium text-decoration-none text-dark">Our Services →</a>
+                  <Link to="/services" className="fw-medium text-decoration-none text-dark">Our Services →</Link>
                </div>
 
             </div>
@@ -50,10 +44,8 @@ const Home = () => {
                <p className="text-uppercase aboutUSRotate">About Us</p>
 
                <div className="" style={{width:'70%'}}>
-                  <h2 className="fs-1 fw-bold">Lorem ipsum<br></br>ijue ksjia</h2>
-                  <p className="pt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat.</p>
+                  <h2 className="fs-2 fw-bold">Your families are our families, and our duty is to always protect them.<br></br>ijue ksjia</h2>
+                  <p className="pt-2">When you choose Legacy Trust for your life insurance, savings and/or retirement needs, they receive over 30 years of financial strength, stability, and a Legacy you can Trust in.</p>
                </div>
             
                <div className="learnMorediv">
